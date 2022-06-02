@@ -1,0 +1,21 @@
+{
+  "name": "Gamer.no statistics page",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Gamer.no statistics page",
+  "background": {
+    "scripts": ["/background/background.js"]
+  },
+  "page_action": {
+    "default_icon": "./assets/gamer2021.svg",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["./plugin/jquery-3.6.0.min.js", "popup.js"],
+      "matches": [ "http://*/*", "https://*/*" ]
+    }
+  ],
+
+  "permissions": ["tabs", "http://*/*"]
+}
