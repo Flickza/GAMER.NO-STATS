@@ -72,39 +72,47 @@ const getObjectUser = (id) => {
     })
 }
 
+const main = () => {
+    let pathname = window.location.pathname.split("/");
+    if (pathname[1] === "brukere" && pathname[4] === "statistikk") {
+        const username = pathname[2];
+        const user_id = pathname[3];
 
-let pathname = window.location.pathname.split("/");
-if (pathname[1] === "brukere" && pathname[4] === "statistikk") {
-    const username = pathname[2];
-    const user_id = pathname[3];
-
-    if (username && user_id) {
-        $(".user-profile div.mb-4 div.bg-light").html(`
-        <table id="table" class="table table-dark table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Map</th>
-                    <th scope="col">Kills</th>
-                    <th scope="col">Deaths</th>
-                    <th scope="col">K/D</th>
-                    <th scope="col">ADR</th>
-                    <th scope="col">Rating</th>
-                    <th scope="col">Games</th>
-                </tr>
-            </thead>
-            <tbody id="table-body">
-                <tr>
-                    <td>LOADING...</td>
-                    <td>LOADING...</td>
-                    <td>LOADING...</td>
-                    <td>LOADING...</td>
-                    <td>LOADING...</td>
-                    <td>LOADING...</td>
-                    <td>LOADING...</td>
-                </tr>
-            </tbody>
-        </table>`);
-        getObjectUser(user_id);
+        if (username && user_id) {
+            $(".user-profile div.mb-4 div.bg-light").html(`
+            <table id="table" class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Map</th>
+                        <th scope="col">Kills</th>
+                        <th scope="col">Deaths</th>
+                        <th scope="col">K/D</th>
+                        <th scope="col">ADR</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Games</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td>LOADING...</td>
+                        <td>LOADING...</td>
+                        <td>LOADING...</td>
+                        <td>LOADING...</td>
+                        <td>LOADING...</td>
+                        <td>LOADING...</td>
+                        <td>LOADING...</td>
+                    </tr>
+                </tbody>
+            </table>`);
+            getObjectUser(user_id);
+        }
     }
-
 }
+
+main();
+
+$(document.body).on('click', 'a', () => {
+    setTimeout(() => {
+        main();
+    }, 2000);
+});
