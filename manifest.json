@@ -1,10 +1,10 @@
 {
   "name": "Gamer.no statistics page",
-  "version": "1.0",
-  "manifest_version": 2,
+  "version": "0.0.1",
+  "manifest_version": 3,
   "description": "Gamer.no statistics page",
   "background": {
-    "scripts": ["/background/background.js"]
+    "service_worker": "/background/background.js"
   },
   "page_action": {
     "default_icon": "./assets/gamer2021.svg",

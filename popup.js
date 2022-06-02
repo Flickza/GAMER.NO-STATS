@@ -103,7 +103,8 @@ const main = () => {
                         <td>LOADING...</td>
                     </tr>
                 </tbody>
-            </table>`);
+            </table>
+            <h4>Made by <a href="https://github.com/Flickza">Flickza</a></h4>`);
             getObjectUser(user_id);
         }
     }
