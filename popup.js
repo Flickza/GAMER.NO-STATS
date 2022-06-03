@@ -110,10 +110,14 @@ const main = () => {
     }
 }
 
-main();
 
-$(document.body).on('click', 'a', () => {
+$(document).ready(() => {
     setTimeout(() => {
         main();
     }, 2000);
+    $(document.body).on('click', 'a', () => {
+        setTimeout(() => {
+            main();
+        }, 2000);
+    });    
 });

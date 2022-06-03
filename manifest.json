@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "js": ["./plugin/jquery-3.6.0.min.js", "popup.js"],
-      "matches": [ "http://*/*", "https://*/*" ]
+      "matches": [ "http://*.gamer.no/brukere/*/*/*", "https://*.gamer.no/brukere/*/*/*" ]
     }
   ],
 
