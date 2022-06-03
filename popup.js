@@ -80,7 +80,7 @@ const main = () => {
 
         if (username && user_id) {
             $(".user-profile div.mb-4 div.bg-light").html(`
-            <table id="table" class="table table-dark table-hover">
+            <table id="table" class="table table-custom table-hover">
                 <thead>
                     <tr>
                         <th scope="col">Map</th>
