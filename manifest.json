@@ -15,6 +15,7 @@
   ],
   "content_scripts": [
     {
+      "run_at": "document_end",
       "js": ["./plugin/jquery-3.6.0.min.js", "popup.js"],
       "matches": [ "https://www.gamer.no/brukere/*" ]
     }
