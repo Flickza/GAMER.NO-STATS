@@ -10,6 +10,9 @@
     "default_icon": "./assets/gamer2021.svg",
     "default_popup": "popup.html"
   },
+  "permissions": [
+    "activeTab"
+  ],
   "content_scripts": [
     {
       "js": ["./plugin/jquery-3.6.0.min.js", "popup.js"],
