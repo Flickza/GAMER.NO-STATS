@@ -18,6 +18,12 @@
   "permissions": [
     "activeTab"
   ],
+  "icons": {
+    "16": "./assets/gamer2021_16.png",
+    "32": "./assets/gamer2021_32.png",
+    "48": "./assets/gamer2021_48.png",
+    "128": "./assets/gamer2021_128.png"
+  },
   "content_scripts": [
     {
       "run_at": "document_end",
