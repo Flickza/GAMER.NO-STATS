@@ -1,0 +1,8 @@
+{
+"api": {
+    "search": "/api/paradise/user/search?q=",
+    "matchups": "/api/paradise/team/TEAM_ID/matchups?page=1",
+    "results": "/api/paradise/team/TEAM_ID/results/matchups?page=1",
+    "team": "/api/paradise/team/TEAM_ID"
+}
+}
