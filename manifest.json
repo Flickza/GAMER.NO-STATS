@@ -7,8 +7,19 @@
     "service_worker": "/background/background.js"
   },
   "page_action": {
-    "default_icon": "./assets/gamer2021.svg",
+    "default_icon": {
+      "16": "./assets/gamer2021_16.png",
+      "32": "./assets/gamer2021_32.png",
+      "48": "./assets/gamer2021_48.png",
+      "128": "./assets/gamer2021_128.png"
+    },
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "./assets/gamer2021_16.png",
+    "32": "./assets/gamer2021_32.png",
+    "48": "./assets/gamer2021_48.png",
+    "128": "./assets/gamer2021_128.png"
   },
   "content_scripts": [
     {
